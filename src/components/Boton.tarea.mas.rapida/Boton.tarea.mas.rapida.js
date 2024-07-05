@@ -1,4 +1,4 @@
-import './boton.tarea.mas.rapida.css';
+// import './boton.tarea.mas.rapida.css';
 import React, { useState } from 'react';
 
 function Botontarearapida() {
