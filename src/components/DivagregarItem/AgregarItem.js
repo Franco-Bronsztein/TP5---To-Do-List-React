@@ -1,8 +1,7 @@
 // import './AgregarItem.css';
 import React, { useState } from 'react';
 
-const AgregarItem = () => {
-    const [tareas, setTareas] = useState([]);
+const AgregarItem = ({tareas, setTareas}) => {
     const [tareaInput, setTareaInput] = useState('');
 
     const handleInputChange = (e) => {
@@ -27,6 +26,7 @@ const AgregarItem = () => {
     const tachar = (index) => {
         const nuevasTareas = [...tareas];
         nuevasTareas[index].tachada = !nuevasTareas[index].tachada;
+        nuevasTareas[index].fechaTachado = new Date();
         setTareas(nuevasTareas);
     };
 

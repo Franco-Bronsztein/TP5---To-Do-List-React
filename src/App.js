@@ -8,10 +8,12 @@ import Lista from './components/Lista/Lista.js';
 
 
 function App() {
+  const [tareas, setTareas] = useState([]);
+
   return (
     <div className="App">
-      <DivAgregarItem></DivAgregarItem>
-      <Botontarearapida></Botontarearapida>
+      <DivAgregarItem tareas={tareas} setTareas={setTareas}></DivAgregarItem>
+      <Botontarearapida tareas={tareas} setTareas={setTareas}></Botontarearapida>
     </div>
   );
 }

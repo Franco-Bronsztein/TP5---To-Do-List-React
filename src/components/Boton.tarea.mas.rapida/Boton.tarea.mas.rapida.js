@@ -1,8 +1,7 @@
 // import './boton.tarea.mas.rapida.css';
 import React, { useState } from 'react';
 
-function Botontarearapida() {
-    const [tareas, setTareas] = useState([]);
+function Botontarearapida({tareas, setTareas}) {
     const [respuesta, setRespuesta] = useState("");
 
     function mostrarTareaMasRapida() {
